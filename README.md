@@ -37,9 +37,7 @@ Now, as previously described, each row or instance in the dataset describes an i
 `File your replies here`
 
 
-**Therefore, you have to find a way to group the multiple rows corresponding to an individual entrepreneur in such a manner that the outcome dataset has only one row per individual. Hint: You can think of `split-apply-combine`feature fo pandas which may make your life smoother while doing this task.** 
-
-But again, we are fully comfortable with any method or technique used by you and once you're done doing it, report us in not more than 200-300 words about how did you achieve this goal and why did you choose the specific method.
+Now, once you have filtered the noisy or redundant rows from the dataset, we would like to see your creativity in pre-precessing the textual information before it maybe ready to be served as a lunch for a machine learning model.**By pre-processing, we basically mean a way to deal with the non relevant textual entities in the context of our problem.** Remember, you can be as creative as you like and therefore there are no boundaries well defined to pre-process the textual entities. You maybe using conventional methods such as stop-words filtering, lemmetization or stemming or relatively newer methods such as extracting entities using word embeddings and we are totally fine with your approach as long as it's readable and practically implementable. Finally, once you're done doing it, report us in not more than 200-300 words about how did you achieve this goal and why did you choose the specific method(s).
 
 `File your replies here`
 
