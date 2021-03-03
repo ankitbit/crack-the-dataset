@@ -4,24 +4,28 @@
 
 ## Introduction
 
-This exercise will mimic a routine day in the life of a data scientist. It will cover the tasks such as data loading, dataset transformation, cleaning, pre-processing followed by exploratory data analysis which will lead to building of some statistical models which are specific to the problem solving in the domain of a data driven venture capital.
+This exercise will mimic a routine day in the life of a data scientist. It will cover the tasks such as data loading, dataset transformation, cleaning, pre-processing followed by exploratory data analysis which will lead to building of some machine learning model(s) which are specific to the problem solving in the domain of a data driven venture capital.
 
 ## Loading the dataset
 
-The dataset is available for the purpose of this exercise in the format of a CSV file which can be dowloaded from the link `https://deepdive-ml.s3-eu-west-1.amazonaws.com/datasets/person_evaluation/entrepreneurs_around_the_world.csv`. This datset contains  information about a large number of entrepreneurs and **consider this exercise as a problem of scoring the ability of  an entrepreneur to be successful in his venture.** The objective here will be to first develop a concrete understanding of the dataset and thereby pre-process the dataset to extract features out of it which maybe serving the purpose of developing a robust statistical model for scoring the ability to be successful. In order to that, we have written the first few lines of code that may help you in reading the dataset and making a sense out of it.
+The dataset is available for the purpose of this exercise in the format of a CSV file which can be dowloaded from the link `https://deepdive-ml.s3-eu-west-1.amazonaws.com/datasets/evaluations/startups_around_the+world.csv`. This datset contains  information about a large number of startups and **consider this exercise as a problem of finding recommendations of similar startups based on an input startup.** 
+`Just to understand the context of the problem, imagine we provide our machine learning model an input as UBER- a ride sharing startup, then the machine must be in a position to recommend me the set of startups similar to UBER such as OLA CABS, LYFT, GRAB, HEETCH etc.`
+
+The objective here will be to first develop a concrete understanding of the dataset and thereby pre-process the dataset to extract features out of it which maybe serving the purpose of developing a robust statistical model for recommending similar startups based on the query of a given startup. In order to that, we have written the first few lines of code that may help you in reading the dataset and making a sense out of it.
 
 
 ```python
 # read the data file using any appropriate method you desire and print the contents
 # write your code here
 from pandas import read_csv
-df= read_csv('https://deepdive-ml.s3-eu-west-1.amazonaws.com/datasets/person_evaluation/entrepreneurs_around_the_world.csv')
+df= read_csv('https://deepdive-ml.s3-eu-west-1.amazonaws.com/datasets/evaluations/startups_around_the+world.csv')
 df.head()
 ```
 
 Now, based on the dataset loaded above, consider the following questions and feel free to answer them in your own words. Note that, there is no absolute answer for any of them and so, you can use use experience and creativity to as much extent as possible.
 
-**1. What did you infer from the dataset?** Elaborate about some of the **most imortant features that are according to you important for scoring the ability to be successful.** And if said in other words, elaborate those features which you feel play an important role in making an entrepreneur successful intuitively. Also describe the reasons behind such an intuition.
+**1. What did you infer from the dataset?** Elaborate about some of the **most imortant features that are according to you important for recommending of similar startups based on an input startup.** And if said in other words, elaborate those features which you feel play an important role in recommendations of similar startups based on a given input startup. Also describe the reasons behind such an intuition. 
+
 
 If you observe carefully, the dataset has many rows where each row describes a particular fundraising which the co-founder has raised for his company. There maybe more than one row for each co-founder if he has raised multiple rounds of funds. Now, **the definition of success as per our investment thesis is either the entrepreneur is successful in raising funds more than or equal to 500000 EUR described by the feature `amount` or has atleast raised a Series A round described by the feature `funding_type`**. 
 
