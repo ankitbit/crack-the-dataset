@@ -27,12 +27,8 @@ Now, based on the dataset loaded above, consider the following questions and fee
 **1. What did you infer from the dataset?** Elaborate about some of the **most imortant features that are according to you important for recommending of similar startups based on an input startup.** And if said in other words, elaborate those features which you feel play an important role in recommendations of similar startups based on a given input startup. Also describe the reasons behind such an intuition. 
 
 
-If you observe carefully, the dataset has many rows where each row describes a particular fundraising which the co-founder has raised for his company. There maybe more than one row for each co-founder if he has raised multiple rounds of funds. Now, **the definition of success as per our investment thesis is either the entrepreneur is successful in raising funds more than or equal to 500000 EUR described by the feature `amount` or has atleast raised a Series A round described by the feature `funding_type`**. 
+**2. How do you think we can formulate the problem of recommending of similar startups based on a given input startup into a machine learning problem. What would be the type of problem i.e. supervised/ unsupervised/ semi-supervised etc? Further, elaborate on how do you approach to solve the problem once you have understood the type of the problem.**
 
-
-**2. How do you think we can formulate the problem of scoring the ability of an entrepreneur to be successful into a supervised learning problem. What would be the data matrix and label for such a case and how would we create a label out of the existing dataset.**
-
-Hint: How would you like to score the ability of being successful- as a regression problem or as a classification problem. While thinking of a suitable label, you may also think of a creating a label by considering or using two or more features. In case of using more than one features for creating a label for the problem, which features do you think we can consider to use as a label for scoring the ability of the co-founders and why?
 
 ## Data Transformation, Pre-Processing and Cleaning
 
