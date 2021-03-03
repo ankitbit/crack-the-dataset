@@ -32,7 +32,10 @@ Now, based on the dataset loaded above, consider the following questions and fee
 
 ## Data Transformation, Pre-Processing and Cleaning
 
-Now, as previously described, each co-founder in the dataset has multiple occurences. Thus, each row describes a particular fundraising which the co-founder has raised for his company. However, we can not work with multiple rows describing an individual entrepreneur since we are going to train our supervised learning algorithm in such a manner that it learns to understand how and why certain individuals are more successful than others where each row in the data will correspond to a unique entrepreneur. 
+Now, as previously described, each row or instance in the dataset describes an individual startup and each column or attribute in that row describes a unqiue feature about that particular startup. Now, there maybe some rows that do not contain viable information and act as noise in the context of our problem and therefore needs to be dealt with. In other words, we would like to highly encourage you to come up wiht your own creative solutions to clean the dataset and separate the information from the noise as much as possible without resulting in heavy data loss. Also, let us know the individual steps taken by you in this regard along with the reasons.
+
+`File your replies here`
+
 
 **Therefore, you have to find a way to group the multiple rows corresponding to an individual entrepreneur in such a manner that the outcome dataset has only one row per individual. Hint: You can think of `split-apply-combine`feature fo pandas which may make your life smoother while doing this task.** 
 
